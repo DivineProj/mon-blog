@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini-Blog de Divine ETOUNDE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #ff5722;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #ff5722;
+    }
+
+    /* Articles */
+    .article {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .article h3 {
+      margin-top: 0;
+      color: #e64a19;
+    }
+
+    /* À propos */
+    .about {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .about img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-right: 20px;
+      object-fit: cover;
+    }
+
+    /* Contact */
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: 'Quicksand', sans-serif;
+    }
+    button {
+      background: #ff5722;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #e64a19;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Mini-Blog de Divine</h1>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#apropos">À propos de moi</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- ACCUEIL -->
+<section id="accueil">
+  <h2>Mes articles</h2>
+
+  <div class="article">
+    <h3>L'importance de rester motivé</h3>
+    <p>Rester motivé face aux défis de la vie n'est pas toujours facile. Mais chaque jour est une nouvelle opportunité de progresser. Même les petits pas mènent loin.</p>
+  </div>
+
+  <div class="article">
+    <h3>Ce que j’ai appris en créant mon premier site</h3>
+    <p>Développer un site m’a appris à persévérer, à structurer mes idées et à transformer mes pensées en projets concrets. C’est une aventure enrichissante.</p>
+  </div>
+</section>
+
+<!-- À PROPOS -->
+<section id="apropos">
+  <h2>À propos de moi</h2>
+  <div class="about">
+    <img src="divine.jpg" alt="Photo de Divine">
+    <p>Je m'appelle <strong>Divine ETOUNDE</strong>. Passionnée par la technologie, j’aime créer des projets utiles, apprendre de nouvelles choses et inspirer les autres à travers mes idées. Ce blog est un espace personnel où je partage ce que j’apprends, ce que je vis et ce que j’aime.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Me contacter</h2>
+  <form action="#" method="POST">
+    <label for="nom">Nom</label>
+    <input type="text" id="nom" name="nom" required>
+
+    <label for="email">Adresse Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Envoyer</button>
+  </form>
+</section>
+
+</body>
+</html>
